@@ -30,7 +30,7 @@ namespace ECommerce_WebApp
         protected void LinkButton1_Command(object sender, CommandEventArgs e)
         {
             Session["pro_id"] = Convert.ToInt32(e.CommandArgument);
-            Response.Redirect("Reviews.aspx");
+            Response.Redirect("Review_Page.aspx");
         }
 
         protected void GridView1_RowDataBound(object sender, GridViewRowEventArgs e)
