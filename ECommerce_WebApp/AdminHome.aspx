@@ -78,6 +78,8 @@
                 <br />
                 <br />
                 <asp:LinkButton ID="LinkButton5" runat="server" PostBackUrl="~/view_user_feedback.aspx">View User Feedback</asp:LinkButton>
+                <br />
+                <asp:LinkButton ID="LinkButton6" runat="server">show active user details</asp:LinkButton>
             </div>
         </div>
     </main>

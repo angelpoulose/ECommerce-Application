@@ -29,7 +29,16 @@ namespace ECommerce_WebApp
 
                 string log_type = "select log_type from LoginTable where reg_id='" + Session["reg_id"] + "'";
                 string logtype = clsobj2.fun_scalar(log_type).ToString();
-                if(logtype=="user") Response.Redirect("UserHome.aspx");
+                if (logtype == "user")
+                {
+                    string s2 = "select user_status from UserTable where user_id=" + Session["reg_id"] + "";
+                    string status = clsobj2.fun_scalar(s2);
+                    if (status == "inactive")
+                    {
+                        ClientScript.RegisterStartupScript(this.GetType(), "alert", "alert('Sorry,Your account has been blocked. Please contact the administrator for further assistance.')",true);
+                    }
+                    else Response.Redirect("UserHome.aspx");
+                }
                 else Response.Redirect("AdminHome.aspx");
             }
             else

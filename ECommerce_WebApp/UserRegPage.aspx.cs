@@ -53,7 +53,7 @@ namespace ECommerce_WebApp
                 int regid = Convert.ToInt32(max);
                 reg_id = regid + 1;
             }
-            string reg = "insert into UserTable values(" + reg_id + ",'" + TextBox_User_Name.Text + "','" + RadioButtonList_User_Gender.SelectedItem.Text + "'," + TextBox_User_age.Text + ",'" + TextBox_User_Phone.Text + "','"+p+"','active','" + TextBox_User_Address.Text + "')";
+            string reg = "insert into UserTable values(" + reg_id + ",'" + TextBox_User_Name.Text + "','" + RadioButtonList_User_Gender.SelectedItem.Text + "'," + TextBox_User_age.Text + ",'" + TextBox_User_Phone.Text + "','"+p+"','active','" + TextBox_User_Address.Text + "','" + emailtb.Text + "')";
             int i = clsobj1.fun_NonQuery(reg);
             if (i == 1)
             {

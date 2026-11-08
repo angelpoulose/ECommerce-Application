@@ -20,7 +20,7 @@ namespace ECommerce_WebApp
         }
         public void gridbindforfeedbackreply()
         {
-            string s = "select u.user_name,u.user_photo,u.user_email,f.feedback_message,p.product_name,p.product_image from UserTable as u join FeedbackTable as f on u.user_id=f.user_id join ProductTable as p on p.product_id=f.product_id";
+            string s = "select u.user_name,u.user_photo,u.user_email,f.feedback_id,f.feedback_message,p.product_name,p.product_image from UserTable as u join FeedbackTable as f on u.user_id=f.user_id join ProductTable as p on p.product_id=f.product_id where f.feedback_status='active'";
             DataSet ds = clsobj.fun_DataAdapterUsingDS(s);
             GridView1.DataSource = ds;
             GridView1.DataBind();
@@ -30,7 +30,11 @@ namespace ECommerce_WebApp
 
         protected void Button1_Command1(object sender, CommandEventArgs e)
         {
-            Session["user_email"] = e.CommandArgument;
+            Session["feedback_id"] = Convert.ToInt32(e.CommandArgument);
+            Button btn = (Button)sender;
+            GridViewRow row = (GridViewRow)btn.NamingContainer;
+            int r = row.RowIndex;
+            Session["user_email"] = GridView1.DataKeys[r].Value.ToString();
             Response.Redirect("reply_email.aspx");
         }
     }

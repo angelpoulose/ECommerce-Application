@@ -16,7 +16,7 @@
         <table class="auto-style1">
             <tr>
                 <td>
-                    <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False">
+                    <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="user_email">
                         <Columns>
                             <asp:ImageField DataImageUrlField="User_Photo" HeaderText="user photo">
                                 <ControlStyle Height="200px" Width="150px" />
@@ -30,7 +30,7 @@
                             <asp:BoundField DataField="feedback_message" HeaderText="feedback" />
                             <asp:TemplateField>
                                 <ItemTemplate>
-                                    <asp:Button ID="Button1" runat="server" CommandArgument='<%# Eval("user_email") %>' OnCommand="Button1_Command1" Text="reply mail" />
+                                    <asp:Button ID="Button1" runat="server" CommandArgument='<%# Eval("feedback_id") %>' OnCommand="Button1_Command1" Text="reply mail" />
                                 </ItemTemplate>
                             </asp:TemplateField>
                         </Columns>
