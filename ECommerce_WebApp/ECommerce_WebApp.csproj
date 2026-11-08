@@ -136,6 +136,7 @@
     <Content Include="Product_View.aspx" />
     <Content Include="README.txt" />
     <Content Include="AdminReg.aspx" />
+    <Content Include="Review_Page.aspx" />
     <Content Include="services.html" />
     <Content Include="shop.html" />
     <Content Include="thankyou.html" />
@@ -245,6 +246,13 @@
     </Compile>
     <Compile Include="AdminReg.aspx.designer.cs">
       <DependentUpon>AdminReg.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Review_Page.aspx.cs">
+      <DependentUpon>Review_Page.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Review_Page.aspx.designer.cs">
+      <DependentUpon>Review_Page.aspx</DependentUpon>
     </Compile>
     <Compile Include="Site1.Master.cs">
       <DependentUpon>Site1.Master</DependentUpon>
