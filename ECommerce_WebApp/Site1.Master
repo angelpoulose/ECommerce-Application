@@ -39,7 +39,7 @@
 						</li>
 						<li class="nav-item <%= Request.AppRelativeCurrentExecutionFilePath == "~/LoginPage.aspx" ? "active" : "" %>"><a class="nav-link" href="LoginPage.aspx">Login</a></li>
 						<li class="nav-item <%= Request.AppRelativeCurrentExecutionFilePath == "~/UserRegPage.aspx" ? "active" : "" %>"><a class="nav-link" href="UserRegPage.aspx">Register</a></li>
-						<li><a class="nav-link" href="shop.html">Shop</a></li>
+						<li class="nav-item <%= Request.AppRelativeCurrentExecutionFilePath == "~/Orders_page.aspx" ? "active" : "" %>"><a class="nav-link" href="Orders_page.aspx">Orders</a></li>
 						<li><a class="nav-link" href="about.html">About us</a></li>
 						<li><a class="nav-link" href="services.html">Services</a></li>
 						<li><a class="nav-link" href="blog.html">Blog</a></li>
