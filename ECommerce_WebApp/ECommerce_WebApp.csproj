@@ -90,6 +90,7 @@
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
     <Content Include="contact.html" />
+    <Content Include="contact_us.aspx" />
     <Content Include="css\bootstrap.min.css" />
     <Content Include="css\style.css" />
     <Content Include="css\tiny-slider.css" />
@@ -202,6 +203,13 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="contact_us.aspx.cs">
+      <DependentUpon>contact_us.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="contact_us.aspx.designer.cs">
+      <DependentUpon>contact_us.aspx</DependentUpon>
     </Compile>
     <Compile Include="EditCategory.aspx.cs">
       <DependentUpon>EditCategory.aspx</DependentUpon>
