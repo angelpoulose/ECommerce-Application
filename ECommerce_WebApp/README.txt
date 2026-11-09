@@ -1,2 +1,2 @@
-Template Name: Furni
+Furni.
 
