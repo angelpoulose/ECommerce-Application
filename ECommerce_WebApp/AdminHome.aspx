@@ -74,12 +74,16 @@
                 <asp:LinkButton ID="LinkButton4" runat="server" CssClass="admin-action" PostBackUrl="~/EditProduct.aspx">
                     <span class="admin-action__title">Edit products</span>
                 </asp:LinkButton>
+                <asp:LinkButton ID="LinkButton5" runat="server" CssClass="admin-action" PostBackUrl="~/view_user_feedback.aspx">
+                    <span class="admin-action__title">View User Feedback</span>
+                </asp:LinkButton>
+                <asp:LinkButton ID="LinkButton6" runat="server" CssClass="admin-action" PostBackUrl="~/active_userdetails.aspx">
+                    <span class="admin-action__title">show active user details</span>
+                </asp:LinkButton>
                 <br />
                 <br />
                 <br />
-                <asp:LinkButton ID="LinkButton5" runat="server" PostBackUrl="~/view_user_feedback.aspx">View User Feedback</asp:LinkButton>
-                <br />
-                <asp:LinkButton ID="LinkButton6" runat="server">show active user details</asp:LinkButton>
+                
             </div>
         </div>
     </main>
