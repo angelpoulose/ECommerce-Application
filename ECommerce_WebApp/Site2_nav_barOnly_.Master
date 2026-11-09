@@ -38,7 +38,7 @@
 						<li><a class="nav-link" href="LoginPage.aspx">Login</a></li>
 						<li><a class="nav-link" href="UserRegPage.aspx">Register</a></li>
 						<li><a class="nav-link" href="orders_page.aspx">Orders</a></li>
-						<li><a class="nav-link" href="about.html">About us</a></li>
+						<li><a class="nav-link" href="about_us.aspx">About us</a></li>
 						<li><a class="nav-link" href="services.html">Services</a></li>
 						<li><a class="nav-link" href="blog.html">Blog</a></li>
 						<li><a class="nav-link" href="contact.html">Contact us</a></li>

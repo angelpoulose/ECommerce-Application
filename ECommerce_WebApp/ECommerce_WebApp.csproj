@@ -70,6 +70,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="about.html" />
+    <Content Include="about_us.aspx" />
     <Content Include="active_userdetails.aspx" />
     <Content Include="AdminHome.aspx" />
     <Content Include="AdminRegPage.aspx" />
@@ -154,6 +155,13 @@
     <Content Include="billView_ifNotPaid.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="about_us.aspx.cs">
+      <DependentUpon>about_us.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="about_us.aspx.designer.cs">
+      <DependentUpon>about_us.aspx</DependentUpon>
+    </Compile>
     <Compile Include="active_userdetails.aspx.cs">
       <DependentUpon>active_userdetails.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
