@@ -76,6 +76,7 @@
     <Content Include="blog.html" />
     <Content Include="cart.html" />
     <Content Include="CategoryInsertion.aspx" />
+    <Content Include="change_order_status.aspx" />
     <Content Include="checkout.html" />
     <Content Include="Connected Services\balanceservice\ECommerce_WebApp.balanceservice.CompositeType.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
@@ -179,6 +180,13 @@
     </Compile>
     <Compile Include="CategoryInsertion.aspx.designer.cs">
       <DependentUpon>CategoryInsertion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="change_order_status.aspx.cs">
+      <DependentUpon>change_order_status.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="change_order_status.aspx.designer.cs">
+      <DependentUpon>change_order_status.aspx</DependentUpon>
     </Compile>
     <Compile Include="Class1.cs" />
     <Compile Include="Connected Services\balanceservice\Reference.cs">

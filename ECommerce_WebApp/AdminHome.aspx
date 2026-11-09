@@ -80,6 +80,9 @@
                 <asp:LinkButton ID="LinkButton6" runat="server" CssClass="admin-action" PostBackUrl="~/active_userdetails.aspx">
                     <span class="admin-action__title">show active user details</span>
                 </asp:LinkButton>
+                <asp:LinkButton ID="LinkButton7" runat="server" CssClass="admin-action" PostBackUrl="~/change_order_status.aspx">
+                    <span class="admin-action__title">change order status</span>
+                </asp:LinkButton>
                 <br />
                 <br />
                 <br />
