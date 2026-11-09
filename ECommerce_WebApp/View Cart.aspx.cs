@@ -23,6 +23,11 @@ namespace ECommerce_WebApp
         {
             string s = "select cart.*,pro.product_name,pro.product_image,pro.product_price,cart.cart_subtotal as sub_Total from CartTable as cart join ProductTable as pro on cart.product_id=pro.product_id where cart.user_id=" + Session["reg_id"] + " and cart_status=1";
             DataTable dt = clsobj.fun_DataAdapterUsingDT(s);
+            if (dt == null)
+            {
+                ClientScript.RegisterStartupScript(this.GetType(), "alert", "alert('cart is empty! Start Shopping!')", true);
+                Response.Redirect("UserHome.aspx");
+            }
             GridView_Cart.DataSource = dt;
             GridView_Cart.DataBind();
         }
