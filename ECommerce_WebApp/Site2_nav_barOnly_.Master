@@ -34,7 +34,7 @@
 
 				<div class="collapse navbar-collapse" id="navbarsFurni">
 					<ul class="custom-navbar-nav navbar-nav ms-auto mb-2 mb-md-0">
-						<li><a class="nav-link" href="Home.aspx">Home</a></li>
+						<li><a class="nav-link" href="UserHome.aspx">Home</a></li>
 						<li><a class="nav-link" href="LoginPage.aspx">Login</a></li>
 						<li><a class="nav-link" href="UserRegPage.aspx">Register</a></li>
 						<li><a class="nav-link" href="orders_page.aspx">Orders</a></li>
